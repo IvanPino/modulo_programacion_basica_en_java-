@@ -1,0 +1,178 @@
+*********************************************************
+*********************************************************
+SEMANA1_DIA3: ACTIVIDAD IVAN PINO
+*********************************************************
+*********************************************************
+ACTIVIDAD N°1
+Calcular promedio y determinar si aprueban o reprueban
+
+Constante: Nota de aprobación
+Constante: Nota de reprobación
+
+[VARIABLES]
+Notas: double
+Promedio: double
+Suma_notas: double
+Cantidad_notas: int
+Respuesta: string
+
+[PROCESO]
+1. Ingreso de notas
+1. Suma de todas las notas= nota 1 + nota 2 +...nota n
+2. Calcular promedio= suma notas/cantidad de notas
+3. Comparar promedio con los límites
+3.1 Si Promedio < 4 = Reprueba
+3.2 Si Promedio > 4 = Aprueba
+
+[SALIDA]
+Aprueba
+Reprueba
+
+*********************************************************
+*********************************************************
+ACTIVIDAD N°2
+Crear un algoritmo que permita recibir los ultimos 6 meses 
+de remuneraciones de un trabajador para este año y para el 
+año anterior. Luego calcule los promedios de cada año y si 
+el año actual las remuneraciones disminuyeron por lo menos
+un 20% indique que es acreedor de un bono por $500.000
+
+[ENTRADAS] 
+Remuneraciones, meses, años, promedios, reducción, bono, 
+cantidad de meses.
+
+[VARIABLES] 
+[int]:
+remNoviembre2019
+remDiciembre2019
+remEnero2020
+remFebrero2020
+remMarzo2020
+remAbril2020
+remNoviembre2020
+remDiciembre2020
+remEnero2021
+remFebrero2021
+remMarzo2021
+remAbril2021
+promPeriodo1
+promPeriodo2
+reduccionRem
+
+[CONSTANTES] 
+[int]:
+cantidadBono=500.000
+cantidadMeses=6
+
+[PROCESO]:
+promPeriodo1 = (remNoviembre2019 + remDiciembre2019 + remEnero2020 + remFebrero2020 + remMarzo2020 + remAbril2020) / cantidadMeses
+promPeriodo2 = (remNoviembre2020 + remDiciembre2020 + remEnero2021 + remFebrero2021 + remMarzo2021 + remAbril2021) / cantidadMeses
+reduccionRem = (promPeriodo2*100)/promPeriodo1
+
+Si reduccionRem => 20 ,entonces es acreedor de un bono de cantidadBono
+
+Salida: Es o no acreedor de un Bono
+
+Ejemplo 2
+
+Var Remuneración_Año_actual_1=RAA1
+Var Remuneración_Año_actual_2=RAA2
+Var Remuneración_Año_actual_3=RAA3
+Var Remuneración_Año_actual_4=RAA4
+Var Remuneración_Año_actual_5=RAA5
+Var Remuneración_Año_actual_6=RAA6
+
+
+Var Remuneración_Año_Pasadol_1=RAP1
+Var Remuneración_Año_Pasadol_2=RAP2
+Var Remuneración_Año_Pasadol_3=RAP3
+Var Remuneración_Año_Pasadol_4=RAP4
+Var Remuneración_Año_Pasadol_5=RAP5
+Var Remuneración_Año_Pasadol_6=RAP6
+
+Entradas
+
+“Ingresar el valor de Remuneración_Año_actual_1”
+Establecer RAA1=Valor Ingresado por usuario
+“Ingresar el valor de Remuneración_Año_actual_2”
+Establecer RAA2=Valor Ingresado por usuario
+“Ingresar el valor de Remuneración_Año_actual_3”
+Establecer RAA3=Valor Ingresado por usuario
+“Ingresar el valor de Remuneración_Año_actual_4”
+Establecer RAA4=Valor Ingresado por usuario
+“Ingresar el valor de Remuneración_Año_actual_5”
+Establecer RAA5=Valor Ingresado por usuario
+“Ingresar el valor de Remuneración_Año_actual_6”
+Establecer RAA6=Valor Ingresado por usuario
+
+“Ingresar el valor de Remuneración_Año_Pasado_1”
+Establecer RAP1=Valor Ingresado por usuario
+“Ingresar el valor de Remuneración_Año_Pasado_2”
+Establecer RAP2=Valor Ingresado por usuario
+“Ingresar el valor de Remuneración_Año_Pasado_3”
+Establecer RAP3=Valor Ingresado por usuario
+“Ingresar el valor de Remuneración_Año_Pasado_4”
+Establecer RAP4=Valor Ingresado por usuario
+“Ingresar el valor de Remuneración_Año_Pasado_5”
+Establecer RAP5=Valor Ingresado por usuario
+“Ingresar el valor de Remuneración_Año_Pasado_6”
+Establecer RAP6=Valor Ingresado por usuario
+
+
+Proceso
+Promedio_año_actual=(RAA1+RAA2+RAA3+RAA4+RAA5+RAA6)/6
+Promedio_año_pasado=(RAP1+RAP2+RAP3+RAP4+RAP5+RAP6)/6
+
+Salida
+Si Promedio_año_actual<( Promedio_año_pasado- (Promedio_año_pasado*0,2)) entonces “es acreedor de un bono por $500.000”
+
+*********************************************************
+*********************************************************
+ACTIVIDAD N°3: Identificar los conjuntos y sus tipos de 
+datos los siguientes contextos: Servel, Banco, Instagram
+
+[SERVEL]
+Candidatos: string
+Cantidad de candidatos: int
+Rut: int
+Nombre: string
+Partido Político: string
+Cantidad de votos: int
+Numero de Distrito = int
+Nombre comuna= string
+
+[BANCO]
+Sede= String o Int
+Sucursal = String
+ServicioEntregado = String
+TrabajadoresRol = String
+TrabajadorRut = Int
+ClientesRut = int
+ClientesN°de cuenta = int
+
+[INSTAGRAM]
+Usuarios:
+Nombre= string
+Publicaciones= string
+Seguidores= int
+
+Publicaciones:
+Fotos= string
+Numero de fotos= int
+Videos= string
+Numero de fotos= int
+Comentarios= string
+
+*********************************************************
+*********************************************************
+ACTIVIDAD N°4: Crear un listado con 6 proposiciones simples:
+
+1. Los médicos son mayores de edad
+2. El color rojo de los semaforos indica "Detenerse"
+3. Un año tiene doce meses
+4. La "pera" es una Fruta
+5. El televisor está enchufado
+6. El fuego quema
+
+*********************************************************
+*********************************************************
