@@ -1,2 +1,1 @@
-# modulo_programacion_basica_en_java-
-Repositorio curso programación Iván Pino
+# Repositorio curso "Desarrollo de aplicaciones móviles Android Trainee"
